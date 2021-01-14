@@ -76,7 +76,7 @@
 }
 
 .Home .home-content {
-    margin-left: 6rem;
+    margin-left: 5.5rem;
     margin-top: 3rem;
 }
 
@@ -90,16 +90,16 @@
 
 .btn {
     background: rgb(255, 255, 255);
-    font-weight: 700;
+    font-weight: 600;
     border-radius: 10px;
-    padding: 12px 36px;
+    padding: 10px 28px;
     color: #000000;
     border: none;
     margin-bottom: 5rem;
 }
 
 .btn>i {
-    padding-right: .6rem;
+    padding-right: .5rem;
 }
 
 .Home .home-image img {
@@ -116,10 +116,10 @@
         transform: translateX(0px);
     }
     50% {
-        transform: translateX(-100px);
+        transform: translateX(-80px);
     }
     100% {
-        transform: translateX(20px);
+        transform: translateX(80px);
     }
 }
 
@@ -304,11 +304,12 @@
     background: linear-gradient(90deg, rgb(4, 56, 168), rgb(43, 110, 255));
     border-radius: 7px;
     padding: 10px 20px;
-    transition: background .5s linear;
+    transition: background 1s ease;
 }
 
 .card .card_price a:hover {
-    background: linear-gradient(90deg, rgb(204, 59, 7), rgb(255, 110, 57));
+    background: linear-gradient(180deg, rgb(250, 178, 69), rgb(224, 105, 8));
+    color: white;
 }
 
 .card .card_price a>i {
@@ -324,10 +325,11 @@
     box-shadow: 1px 0px 18px 1px rgba(0, 0, 0, 0.3);
     -webkit-box-shadow: 1px 0px 18px 1px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 1px 0px 18px 1px rgba(0, 0, 0, 0.3);
-    transition: background .8s linear;
     margin-bottom: 2rem;
     padding: 20px 20px;
     height: 280px;
+    border-radius: 10px;
+    transition: background .8s linear;
 }
 
 .features_item:hover {
@@ -432,9 +434,36 @@
     color: cornflowerblue;
 }
 
+@media(max-width:1050px) {
+    .Home .home-content h1 {
+        font-size: 1.6rem;
+    }
+    .Home .home-content p {
+        font-size: .8rem;
+    }
+    .Home .home-content a {
+        padding: 5px 10px;
+        font-size: .7rem;
+    }
+    .carousel-inner {
+        width: 100%;
+    }
+}
+
 @media(max-width:765px) {
     .Home .home-content {
-        margin-right: 4rem;
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
+    .Home .home-content h1 {
+        font-size: 1.3rem;
+    }
+    .Home .home-content p {
+        font-size: .8rem;
+    }
+    .Home .home-content a {
+        padding: 5px 10px;
+        font-size: .7rem;
     }
     .carousel-inner {
         width: 100%;
