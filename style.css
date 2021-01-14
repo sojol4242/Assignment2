@@ -271,6 +271,12 @@
     padding: 10px 10px;
     height: 550px;
     margin-bottom: 2rem;
+    transition: transform .7s ease-in-out;
+    cursor: pointer;
+}
+
+.products .card:hover {
+    transform: scale(1.015);
 }
 
 .card .card-img-top {
@@ -280,10 +286,15 @@
 
 .card-body .card-title {
     margin-bottom: 1rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: rgb(7, 6, 77);
 }
 
 .card-body .card-text {
     line-height: 2;
+    font-size: 1rem;
+    color: rgb(22, 13, 0);
 }
 
 .card .card_price {
