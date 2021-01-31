@@ -442,6 +442,11 @@
 
             </div>
         </section>
+      <!-- scroll to top -->
+
+        <div class="scroll-top">
+            <i id="icon" class="fa fa-arrow-circle-up" aria-hidden="true"></i>
+        </div>
         <!-- foooter  -->
         <footer class="footer">
             <div class="container">
@@ -464,7 +469,13 @@
 
 
 
+           <script>
+        const scrollButton = document.querySelector(".scroll-top");
+        scrollButton.addEventListener("click", () => {
+            window.scrollTo(0, 0);
 
+        });
+    </script>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
