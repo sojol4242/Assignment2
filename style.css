@@ -491,6 +491,42 @@
     }
 }
 
+/* scroll to up code */
+
+.scroll-top {
+    height: 60px;
+    width: 60px;
+    background-color: transparent;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    border-radius: 6px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.336);
+    /* hover effect default */
+    transform: scale(0.9);
+    transition: 0.3s ease-in-out transform;
+    /* for centering the icon */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scroll-top {
+    pointer-events: none;
+}
+
+.scroll-top i {
+    font-size: 2rem;
+    padding: .5rem;
+    text-align: center;
+    align-items: center;
+    color: rgb(7, 5, 46);
+}
+
+.scroll-top:hover {
+    transform: scale(1);
+}
 
 /* 
 @media(max-width:450px) {
